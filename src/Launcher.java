@@ -7,8 +7,11 @@ public class Launcher {
 
         Scanner scanner = new Scanner(System.in);
 
-        String instruction = scanner.nextLine();
-        if (!Objects.equals(instruction, "quit"))
-            System.out.println("Unknown command");
+        while (true) {
+            String instruction = scanner.nextLine();
+            if (Objects.equals(instruction, "quit"))
+                break;
+            else System.out.println("Unknown command");
+        }
     }
 }
