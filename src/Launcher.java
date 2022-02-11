@@ -8,6 +8,7 @@ public class Launcher {
         commands.add(new Fibo());
         commands.add(new Freq());
         commands.add(new Quit());
+        commands.add(new Predict());
         boolean isRunning = false;
         while (!isRunning) {
             System.out.println("Enter command :");
